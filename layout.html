@@ -1,60 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hotel Atlântico Rio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 <body>
-    <h1>Hotel Atlântico Rio</h1>
-
 <!----------------Início da barra de navegação---------------->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: hsl(197, 97%, 31%)">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: hsl(14, 64%, 6%)">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="index.html">Logo</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html" style="color: hsl(0, 0%, 100%); font-family: Cochin; font-size: 16pt;">Início</a>
+                <a class="nav-link" href="index.html" style="color: hsl(0, 0%, 100%); font-family: Cochin; font-size: 16pt;">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nós</a>
+                <a class="nav-link" href="experiencia.html" style="color: hsl(0, 0%, 100%); font-family: Cochin; font-size: 16pt;">Experiência</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Nossos serviços
+                  Estrutura
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Para sua empresa</a></li>
-                  <li><a class="dropdown-item" href="#">Para você</a></li>
+                  <li><a class="dropdown-item" href="acomodacoes.html">Acomodações</a></li>
+                  <li><a class="dropdown-item" href="lazer.html">Área de Lazer</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Câmbio turismo</a></li>
-                  <li><a class="dropdown-item" href="#">Cartões pré-pagos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Intermediações financeiras</a></li>
+                  <li><a class="dropdown-item" href="eventos.html">Eventos</a></li>
                 </ul>
               </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contato
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Telefones</a></li>
-                  <li><a class="dropdown-item" href="#">Localização</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="reservas.html">Reservas</a>
               </li>
           
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -70,13 +57,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/lounge2.png" class="d-block w-100" alt="...">
+        <img src="img/1.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="img/lounge4.jpg" class="d-block w-100" salt="...">
+        <img src="img/2.png" class="d-block w-100" salt="...">
       </div>
       <div class="carousel-item">
-        <img src="img/lounge6.jpg" class="d-block w-100" alt="...">
+        <img src="img/3.png" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -90,6 +77,38 @@
   </div>
 
 <!-------------------Fim do carrossel------------------->
+
+
+<div class="container-fluid">
+
+    <div class="row">
+
+        <div class="col">
+            <form>
+                <label>Faça sua reserva aqui</label>
+                <br><br>
+                <label>Check-In: <input type="date" id="checkin" required></label>
+                <label>Check-Out: <input type="date" id="checkout" required></label>
+                <input type="submit" id="btnreservar" value="Reservar">
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-------------------Início do container------------------->
@@ -143,8 +162,6 @@
 </div>
 
 
-<!-------------------Fim do container------------------->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
